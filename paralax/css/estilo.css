@@ -1,0 +1,169 @@
+body, html {
+	margin: 0;
+	font: 16px "Lato", sans-serif;
+	color: #777;
+	height: 100%;
+}
+
+.conteudo{
+	color:#2f4f4f;
+	background-color: white;
+	text-align: justify;
+	padding: 50px 80px;
+}
+h3{
+	text-transform: uppercase;
+	color: #00bfff;
+	text-align: center;
+}
+p{
+	margin-bottom: 20px;
+}
+/*paralax*/
+.caixa1, .caixa2, .caixa3,.caixa4, .caixa5,.caixa1k, .caixa2k, .caixa3k,.caixa4k, .caixa5k, .caixa6k, .caixa7k, .caixa8k,.caixa9k, .caixa10k
+,.caixa11k, .caixa12k, .caixa13k,.caixa14k, .caixa15k 
+{
+	height: 100%;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+}
+.caixa17{
+	height: 100%;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.caixa01{
+	width: 50%;
+	height: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url(../imagens/extra2.png);
+}
+.caixa001{
+	margin-left: 50%;
+	margin-top: -61.31%;
+	width: 50%;
+	height: 100%;
+	position: relative;
+	background-image: url(../imagens/extra.png);
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.caixa1{
+	background-image: url(../imagens/tanjiro.jpg);
+}
+
+.caixa2{
+	background-image: url(../imagens/zenitsu.jpg);
+}
+.caixa3{
+	background-image: url(../imagens/hashiras.jpg);
+}
+.caixa4{
+	background-image: url(../imagens/nezuko.jpg);
+}
+.caixa5{
+	background-image: url(../imagens/glicinia.png);
+}
+.caixa1k{
+	background-image: url(../imagens/kimetsu1.jpg);
+}
+
+.caixa2k{
+	background-image: url(../imagens/kimetsu2.jpg);
+}
+.caixa3k{
+	background-image: url(../imagens/kimetsu3.png);
+}
+.caixa4k{
+	background-image: url(../imagens/kimetsu4.jpg);
+}
+.caixa5k{
+	background-image: url(../imagens/kimetsu5.jpg);
+}
+.caixa6k{
+	background-image: url(../imagens/aliado1.png);
+}
+
+.caixa7k{
+	background-image: url(../imagens/aliado2.png);
+}
+.caixa8k{
+	background-image: url(../imagens/aliado3.jpg);
+}
+.caixa9k{
+	background-image: url(../imagens/aliado4.jpg);
+}
+.caixa10k{
+	background-image: url(../imagens/aliado5.jpg);
+}
+.caixa11k{
+	background-image: url(../imagens/pilar1.jpg);
+}
+
+.caixa12k{
+	background-image: url(../imagens/pilar2.jpg);
+}
+.caixa13k{
+	background-image: url(../imagens/pilar3.png);
+}
+.caixa14k{
+	background-image: url(../imagens/pilar4.png);
+}
+.caixa15k{
+	background-image: url(../imagens/pilar5.jpg);
+}
+.caixa16k{
+	background-image: url(../imagens/extra3.jpg);
+}
+
+.caixa17k{
+	background-image: url(../imagens/extra4.png);
+}
+.caixa18k{
+	background-image: url(../imagens/extra5.png);
+}
+.caixa19k{
+	background-image: url(../imagens/extra6.jpg);
+}
+.conteudo-titulo{
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+	
+}
+a{
+	text-decoration:none;
+}
+.conteudo-titulo span.titulo{
+	background-color: #696969;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 5px;
+	color: #00ffff;
+	text-transform: uppercase;
+
+
+}
+
+.video{
+	width: 100%;
+	text-align: center;
+}
