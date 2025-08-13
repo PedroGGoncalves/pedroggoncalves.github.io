@@ -8843,7 +8843,12 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #ffc107 !important;
+}
+
+
+.text-yellow {
+  color: #ffff00 !important;
 }
 
 .text-primary {
