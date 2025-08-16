@@ -2,69 +2,73 @@
 <html>
 <head>
 	<!--O site foi feito utilizando conhecimentos passados pelo curso
-      da Udemy. --->
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		da Udemy. --->
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
-  <link rel="stylesheet" href="preloader-com-css3.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+		<link rel="stylesheet" href="preloader-com-css3.css">
 
-  <!--JS Functions -->
-  <script>
-     function acao(){
-       alert('Currículo feito com HTML simples, mostrando apenas informações básicas sobre mim')
-     }
+		<!--JS Functions -->
+		<script>
+			function acao(){
+				alert('Currículo feito com HTML simples, mostrando apenas informações básicas sobre mim')
+			}
 
-     function acao2(){
-       alert('Currículo feito com mais linguagens, como CSS e Bootstrap. Além de usar, alguns conceitos mais aprodudados. Esse currículo, apresenta mais informações sobre mim')
-     }
+			function acao2(){
+				alert('Currículo feito com mais linguagens, como CSS e Bootstrap. Além de usar, alguns conceitos mais aprodudados. Esse currículo, apresenta mais informações sobre mim')
+			}
 
-     function acao3(){
-       alert('Página com os projetos que realizei ao longo dos anos. Alguns serão explicados com mais profundidade do que outros')
-     }
-   </script>
+			function acao3(){
+				alert('Página com os projetos que realizei ao longo dos anos. Alguns serão explicados com mais profundidade do que outros')
+			}
 
-	<title>Meu portfólio</title>
-	<!--Essa imagem não pertence a mim, seus direitos são de seus donos. Portanto, eu apenas utilizei para fins educacionais.-->
-	<link rel="icon" href="img/p_l.png">
-</head>
-<body>
+			function acao4(){
+				alert('Seja bem-vindo ao currículo com mais detalhes visuais!')
+			}
+		</script>
+
+		<title>Meu portfólio</title>
+		<!--Essa imagem não pertence a mim, seus direitos são de seus donos. Portanto, eu apenas utilizei para fins educacionais.-->
+		<link rel="icon" href="img/p_l.png">
+	</head>
+	<body>
 
 <!-- A tela de carregamento foi feita através de uma pesquisa no site Stack Overflow e o GIF utilizado foi feito no site Canvas
 	<div id="preloader">
 		<img id="img" src="img/P.gif">
-  </div>-->
+	</div>-->
 
-  <div class="content">
-  	<header> Escolha sua opção</header>
+	<div class="content">
+		<header> Escolha sua opção</header>
 		<article>
 			<div class="container">
 				<div class="marcador row align-items-center">
-		      <div onmouseout="acao()" class="col borda"> <a href="cv.html"><button class="btn" type="button">Currículo Simples</button></a> </div>
-		      <div onmouseout="acao2()" class="col borda"><a href="cv2.html"><button class="btn btn-dark" type="button">Currículo Complexo</button></a> </div>
-		      <div onmouseout="acao3()" class="col borda"> <a href="portfolio.html"><button class="btn btn-outline-info" type="button">Meus Projetos</button></a> </div>
-		    </div>
-	    </div>
+					<div class="col borda"> <a href="cv.html" class="tooltip-link"><button class="btn" type="button">Currículo Simples</button> <span class="tooltip-text">Simplificado em visual e conteúdo (Apenas HTML)</span></a>  </div>
+					<div onclick ="acao4()" class="col borda"><a href="cv2.html" class="tooltip-link"><button class="btn btn-dark" type="button">Currículo Complexo</button><span class="tooltip-text">Conteúdo e visual mais aprofundados (HTML, CSS e Bootstrap)</span></a> </div>
+					<div class="col borda"> <a href="portfolio.html" class="tooltip-link"><button class="btn btn-outline-info" type="button">Meus Projetos</button><span class="tooltip-text">Portfólio de projetos realizados. Alguns contém mais explicação do que os demais</span></a> </div>
+				</div>
+			</div>
 		</article>
 		<footer>
 			<p>&copy; 2023 - PGG</p>
 		</footer>
-  </div>
+	</div>
 
-  <!--Funcao da tela de loading-->
+	<!--Funcao da tela de loading-->
 	<script type="text/javascript">
-    	$(window).on('load', function () {
-		    $('#preloader .inner').fadeOut();
-		    $('#preloader').delay(350).fadeOut('slow'); 
-		    $('body').delay(350).css({'overflow': 'visible'});
-			})
-  </script>
+		$(window).on('load', function () {
+			$('#preloader .inner').fadeOut();
+			$('#preloader').delay(350).fadeOut('slow'); 
+			$('body').delay(350).css({'overflow': 'visible'});
+		})
+	</script>
 
 </body>
 </html>

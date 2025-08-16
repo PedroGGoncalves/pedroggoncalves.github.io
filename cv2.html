@@ -15,8 +15,8 @@
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
 
   <link rel="stylesheet" href="preloader-com-css3.css">
-    
-	<title>Meu estiloso CV</title>
+
+  <title>Meu estiloso CV</title>
   <link rel="icon" href="img/p_l.png">
 
 </head>
@@ -25,7 +25,7 @@
     <img id="img" src="img/P.gif">
   </div>-->
   <!--Essas imagens não pertencem a mim, seus direitos são de seus donos. Portanto, eu apenas as utilizei para fins educacionais.-->
-    
+
   <div class="content">
     <h3 class="border-bottom">Pedro G. Gonçalves</h3>
     <div class="jumbotron">
@@ -39,11 +39,13 @@
     </div>
 
     <h3 class="border-bottom">Sobre mim</h3>
-    <div class="media">
-      <img class="mr-3" src="img/p_des.png">
+    <div class="overflow: hidden;">
+      <img src="img/p_des.png" 
+      style="float: left; margin-right: 15px; max-width: 300px; height: auto;">
+
       <div class="media-body">
         <h5>Informações básicas</h5>
-         
+
         <p>Tenho <span id="idade"></span>  anos e me interesso por diversos assuntos, principalmentes os ligados aos temas de tecnologia e cultura geek.</p>
         <p>Sou uma pessoas mais introvertida e que sempre apresentou uma atração por computadores, celulares, jogos, aplicativos, sites... coisas relacionadas à software. Até que, no 3º colegial, necessitei escolher um curso. Após muita reflexão e ajuda, coloquei Ciências da Computação com o curso com maior chances de me realizar profissionalmente. E ssa foi uma escolha acertiva, na universidade percebi que tinha escolhido o curso certo. O meu lance é programar, e na Alliage, tive certeza que, mesmo no mundo corporativo, programar é o que mais funciona para mim.</p>
         <p>Então, resolvi fazer esse portifólio em meu tempo livre, para colocar em prática meus conhecimentos e poder ter um site feito por mim. Isso se juntou ao fato que gostaria de ter algo para mostrar mais sobre mim à possíveis recrutadores. Vale ressaltar, que sempre desejei que fosse algo simples e interessante/atrativo. Por isso, fiz ele com muita calma e sempre que sobrava tempo.Seria possível fazer algo mais complexo ao copiar códigos abertos, como muitos fazem. Mas eu queria mostrar coisas que aprendi, por isso fiz assim de modo a destacar elas, se preocupando pouco com a estética. Porém, obviamente tem alguns pontos que quero melhorar ainda. Vale citar, que pretendo atualizar ele conforme o tempo for passando. </p>
@@ -66,7 +68,7 @@
       </div>
       <div class="card text-white">
         <img class="card-img" src="img/coursera.png" width="600px" height="250px">
-         <div class="card-img-overlay">
+        <div class="card-img-overlay">
           <h4 class="card-title">Curso</h4>
           <h6 class="card-subtitle">Introdução à Ciências da Computação</h6>
           <br><br>
@@ -77,7 +79,7 @@
       </div>
       <div class="card text-black">
         <img class="card-img" src="img/udemy.png" width="200px" height="250px">
-         <div class="card-img-overlay">
+        <div class="card-img-overlay">
           <h4 class="card-title">Curso</h4>
           <h6 class="card-subtitle">Desenvolvimento Web Completo</h6>
           <p class="card-text">Feito no site Udemy, onde aprendi diversas linguagens. Como ainda não conclui o curso, aprendi apenas HTML, CSS, Bootstrap, JS, EMACS e PHP.</p>
@@ -86,7 +88,7 @@
       </div>
       <div class="card text-primary">
         <img class="card-img" src="img/alura.png" width="200px" height="250px">
-         <div class="card-img-overlay">
+        <div class="card-img-overlay">
           <h4 class="card-title">Curso</h4>
           <h6 class="card-subtitle">C++: Conhecendo a linguagem e a STL</h6>
           <p class="card-text">Feito no site Alura, onde fortaleci alguns conhecimentos dessa linguagem.</p>
@@ -96,94 +98,97 @@
     </div>
 
     <h3 class="border-bottom">Tecnologias e Linuagens</h3>
-      <div class="row borda justify-content-around">
-        <div class="marcador2 col-2  ">
-            <p class="bordar">
-              C <br>
-              C++<br>
-              HTML<br>
-              CSS<br>
-              Bootstrap<br>
-              SQL
-            </p>
-        </div>
-        <div class="marcador2 col-2">
-            <p class="bordar">
-              JS<br>
-              PHP<br>
-              EMACS Script<br>
-              Java<br>
-              Python<br>
-              Linux
-            </p>   
-        </div>
-        <div class="marcador2 col-2">
-            <p class="bordar">Canvas<br>
-              Excel<br>
-              Word<br>
-              PowerPoint<br>
-              Publisher<br>
-              Jupyter Notebook<br>
-              Trello</p>   
-        </div>
-        <div class="marcador2 col-2">
-            <p class="bordar">Clickup<br>
-              ImageJ<br>
-              WinMerge<br>
-              PowerToys</p>   
-        </div>
+    <div class="row borda justify-content-around">
+      <div class="marcador2 col-2  ">
+        <p class="bordar">
+          C <br>
+          C++<br>
+          HTML<br>
+          CSS<br>
+          Bootstrap<br>
+          SQL
+        </p>
       </div>
+      <div class="marcador2 col-2">
+        <p class="bordar">
+          JS<br>
+          PHP<br>
+          EMACS Script<br>
+          Java<br>
+          Python<br>
+          Linux
+        </p>   
+      </div>
+      <div class="marcador2 col-2">
+        <p class="bordar">Canvas<br>
+          Excel<br>
+          Word<br>
+          PowerPoint<br>
+          Publisher<br>
+          Jupyter Notebook<br>
+        Trello</p>   
+      </div>
+      <div class="marcador2 col-2">
+        <p class="bordar">Clickup<br>
+          ImageJ<br>
+          WinMerge<br>
+        PowerToys</p>   
+      </div>
+    </div>
 
-      <h3 class="border-bottom">Idiomas</h3>
-      <div class="caixa d-flex flex-wrap gap-3">
+    <h3 class="border-bottom">Idiomas</h3>
+    <div class="caixa d-flex flex-wrap gap-3">
       <div class="idioma d-flex align-items-center gap-2">
-          <img src="img/br.jpg" width="40" height="20" alt="Bandeira Brasil">
-          <span>: Nativo</span>
-        </div>
-        <div class="idioma d-flex align-items-center gap-2">
-          <img src="img/eua.png" width="40" height="20" alt="Bandeira EUA">
-          <span>: Intermediário</span>
-        </div>
+        <img src="img/br.jpg" width="40" height="20" alt="Bandeira Brasil">
+        <span>: Nativo</span>
       </div>
+      <div class="idioma d-flex align-items-center gap-2">
+        <img src="img/eua.png" width="40" height="20" alt="Bandeira EUA">
+        <span>: Intermediário</span>
+      </div>
+    </div>
 
-      <h3 class="border-bottom">Experiências Profissionais</h3>
-    <table class="table table-dark">
-      <thead>
-        <tr>
-          <th>Empresa</th>
-          <th>Cidade</th>
-          <th>Cargo</th>
-          <th>Início</th>
-          <th>Fim</th>
-          <th>Descrição</th>
-        </tr>
-      </thead>
+    <h3 class="border-bottom">Experiências Profissionais</h3>
+    <div class="table-responsive mt-4">
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>Empresa</th>
+            <th>Cidade</th>
+            <th>Cargo</th>
+            <th>Início</th>
+            <th>Fim</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr>
-          <td>Alliage</td>
-          <td>Ribeirão Preto</td>
-          <td>Estagiário em Pesquisa e Desenvolvimento de Software</td>
-          <td>Fevereiro de 2023</td>
-          <td>Dezembro de 2023</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Alliage</td>
-          <td>Ribeirão Preto</td>
-          <td>Desenvolvedor de Software Júnior</td>
-          <td>Dezembro de 2023</td>
-          <td>Junho de 2025</td>
-          <td>2</td>
-        </tr>
-      </tbody>
-    </table>
+        <tbody>
+          <tr>
+            <td>Alliage</td>
+            <td>Ribeirão Preto</td>
+            <td>Estagiário em Pesquisa e Desenvolvimento de Software</td>
+            <td>Fevereiro de 2023</td>
+            <td>Dezembro de 2023</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Alliage</td>
+            <td>Ribeirão Preto</td>
+            <td>Desenvolvedor de Software Júnior</td>
+            <td>Dezembro de 2023</td>
+            <td>Junho de 2025</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
     <div class="mt-2">
-    <small>
-      <sup>1</sup> Participação de projetos, com a finalidade de melhorar a qualidade da imagemns panorâmicas, adição de features no sistema do novo equipamento. Foi necessário realizar pesquisar, desenvolver soluções, analisar os resultados, otimizar os algoritmos, validar antes de ir para o QA e colaboração com o time multidisciplinar. As atividades podem ser resumidas em dois projetos:  Redução do Apinhamento Dental, o qual utilizei MATLAB e Python; Desenvolvimento do software do Scanner próprio, onde usei Python, OpenCV, Open3D, Cloud Compare, C++ e ImageJ<br><br>
-      <sup>2</sup> Participação de projetos, com a finalidade de melhorar a qualidade da imagens tomográficas, adição ou correção de features no software já existente. Foi necessário realizar pesquisar, desenvolver soluções, analisar os resultados, otimizar os algoritmos, validar antes de ir para o QA e colaboração com o time multidisciplinar. As atividades podem ser resumidas nos seguintes projetos: MERGE de softwares de dois equipamentos de linhas diferentes, Integração de sensor novo via software, Melhoria do método de unificação de imagens com stiching, Adaptação do software para integração com softwares externos, Redução de consumo de memória. Entre outras tarefas que individualizadas, que eram correções ou adições à esse software. Em todos esses projetos, foram usados Java, CSS, C#, JavaFX, MATLAB, C++, ImageJ, WinMerge, PowerToys e GitHub.
-    </small>
-  </div>
+      <small>
+        <sup>1</sup> Participação de projetos, com a finalidade de melhorar a qualidade da imagemns panorâmicas, adição de features no sistema do novo equipamento. Foi necessário realizar pesquisar, desenvolver soluções, analisar os resultados, otimizar os algoritmos, validar antes de ir para o QA e colaboração com o time multidisciplinar. As atividades podem ser resumidas em dois projetos:  Redução do Apinhamento Dental, o qual utilizei MATLAB e Python; Desenvolvimento do software do Scanner próprio, onde usei Python, OpenCV, Open3D, Cloud Compare, C++ e ImageJ<br><br>
+        <sup>2</sup> Participação de projetos, com a finalidade de melhorar a qualidade da imagens tomográficas, adição ou correção de features no software já existente. Foi necessário realizar pesquisar, desenvolver soluções, analisar os resultados, otimizar os algoritmos, validar antes de ir para o QA e colaboração com o time multidisciplinar. As atividades podem ser resumidas nos seguintes projetos: MERGE de softwares de dois equipamentos de linhas diferentes, Integração de sensor novo via software, Melhoria do método de unificação de imagens com stiching, Adaptação do software para integração com softwares externos, Redução de consumo de memória. Entre outras tarefas que individualizadas, que eram correções ou adições à esse software. Em todos esses projetos, foram usados Java, CSS, C#, JavaFX, MATLAB, C++, ImageJ, WinMerge, PowerToys e GitHub.
+      </small>
+    </div>
 
     <h3 class="border-bottom">Experiências Voluntárias</h3>
     <div class="alert alert-dark">
@@ -196,12 +201,12 @@
     </div>
 
     <h3 class="border-bottom">Contato e Redes</h3>
-      <ul class="list-group">
-        <li class="list-group-item">Email: pedro.g.goncalves82@gmail.com</li>
-        <li class="list-group-item list-group-item-info">Email Institucional: pedro.g.goncalves@unesp.br</li>
-        <li class="list-group-item">LinkedIn:<a href="https://www.linkedin.com/in/pedro-gonçalves-9787181a0/"> linkedin.com/in/pedro-gonçalves-9787181a0</a> </li>
-        <li class="list-group-item list-group-item-info">GitHub:<a href="https://github.com/PedroGGoncalves"> github.com/PedroGGoncalves</li></a>
-      </ul>
+    <ul class="list-group">
+      <li class="list-group-item">Email: pedro.g.goncalves82@gmail.com</li>
+      <li class="list-group-item list-group-item-info">Email Institucional: pedro.g.goncalves@unesp.br</li>
+      <li class="list-group-item">LinkedIn:<a href="https://www.linkedin.com/in/pedro-gonçalves-9787181a0/"> linkedin.com/in/pedro-gonçalves-9787181a0</a> </li>
+      <li class="list-group-item list-group-item-info">GitHub:<a href="https://github.com/PedroGGoncalves"> github.com/PedroGGoncalves</li></a>
+    </ul>
 
     <h3 class="border-bottom">Obrigado por chegar até aqui!</h3>
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
@@ -218,35 +223,36 @@
         </li>
       </ul>
     </nav>
+  </div>
 
-   
-    
-    <p>Caso tenha interesse, abaixo colocarei o link do meu canal no Youtube relaciona a músicas relaxantes e o do meu blog sobre cultura geek. São projetos pessoais, vertentes minhas "sem relação" com programação. </p>
 
-            <ul>
-                <li><b><a href="https://www.youtube.com/@ConatusRelax">Canal no Youtube</a> </b></li>
-                <li><b><a href="https://conatussblog.blogspot.com/">Blog</a> </b></li>
-            </ul>
+  <p>Caso tenha interesse, abaixo colocarei o link do meu canal no Youtube relaciona a músicas relaxantes e o do meu blog sobre cultura geek. São projetos pessoais, vertentes minhas "sem relação" com programação. </p>
 
-        <p> Bem é isso...  </p>
-        <br>
-         <img src="img/naruto.jpg" style="margin-left: 50px; width: 600px; height: 314px; ">
-         <br><br><br>
-     <h3>Até mais!</h3>
+  <ul>
+    <li><b><a href="https://www.youtube.com/@ConatusRelax">Canal no Youtube</a> </b></li>
+    <li><b><a href="https://conatussblog.blogspot.com/">Blog</a> </b></li>
+  </ul>
+
+  <p> Bem é isso...  </p>
+  <br>
+  <img src="img/naruto.jpg" 
+  style="margin-left: 5px; max-width: 100%; height: auto;">
+  <br><br><br>
+  <h3>Até mais!</h3>
 
   <!--Funcao da tela de loading-->
-	<script type="text/javascript">
-    	$(window).on('load', function () {
-      $('#preloader .inner').fadeOut();
-      $('#preloader').delay(350).fadeOut('slow'); 
-      $('body').delay(350).css({'overflow': 'visible'});
+  <script type="text/javascript">
+   $(window).on('load', function () {
+    $('#preloader .inner').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow'); 
+    $('body').delay(350).css({'overflow': 'visible'});
   })
-  </script>
-       
-  <script>
-    const idade = new Date().getFullYear();
-    document.getElementById('idade').textContent = idade - 2000;
-  </script>  
-    
+</script>
+
+<script>
+  const idade = new Date().getFullYear();
+  document.getElementById('idade').textContent = idade - 2000;
+</script>  
+
 </body>
 </html>
