@@ -55,96 +55,147 @@
     </div>
     <br><br>
     
-    <h3 class="border-bottom">Formação</h3>
-    <div class="card-columns">
-      <div class="card text-black">
-        <img class="card-img" src="img/unesp.jpg" width="600px" height="250px">
-        <div class="card-img-overlay">
-          <h4 class="card-title">Graduação</h4>
-          <h6 class="card-subtitle">Bacharelado em Ciências da Computação</h6>
-          <p class="card-text">Na Unesp (Universidade Estadual Paulista "Júlio de Mesquita Filho") no campûs de Rio Claro, de 2019 à 2023 (Concluído)</p>
-          <a class="btn btn-outline-primary" href="https://igce.rc.unesp.br/">Site da Instituição</a>
-        </div>
-      </div>
-      <div class="card text-white">
-        <img class="card-img" src="img/coursera.png" width="600px" height="250px">
-        <div class="card-img-overlay">
-          <h4 class="card-title">Curso</h4>
-          <h6 class="card-subtitle">Introdução à Ciências da Computação</h6>
-          <br><br>
-          <br>
-          <p class="card-text">Feito pela Coursera, onde aprendi a linguagem Python. Finalizei em 2019.</p>
-          <a class="btn btn-outline-light" href="https://pt.coursera.org/learn/ciencia-computacao-python-conceitos">Site da Instituição</a>
-        </div>
-      </div>
-      <div class="card text-black">
-        <img class="card-img" src="img/udemy.png" width="200px" height="250px">
-        <div class="card-img-overlay">
-          <h4 class="card-title">Curso</h4>
-          <h6 class="card-subtitle">Desenvolvimento Web Completo</h6>
-          <p class="card-text">Feito no site Udemy, onde aprendi diversas linguagens. Como ainda não conclui o curso, aprendi apenas HTML, CSS, Bootstrap, JS, EMACS e PHP.</p>
-          <a class="btn btn-outline-dark" href="https://www.udemy.com/course/web-completo/">Site da Instituição</a>
-        </div>
-      </div>
-      <div class="card text-primary">
-        <img class="card-img" src="img/alura.png" width="200px" height="250px">
-        <div class="card-img-overlay">
-          <h4 class="card-title">Curso</h4>
-          <h6 class="card-subtitle">C++: Conhecendo a linguagem e a STL</h6>
-          <p class="card-text">Feito no site Alura, onde fortaleci alguns conhecimentos dessa linguagem.</p>
-          <a class="btn btn-outline-primary" href="https://www.alura.com.br/curso-online-cpp-introducao-a-linguagem">Site da Instituição</a>
-        </div>
-      </div>
-    </div>
+    <h3 class="border-bottom mb-4">Formação</h3>
 
-    <h3 class="border-bottom">Tecnologias e Linuagens</h3>
-    <div class="row borda justify-content-around">
-      <div class="marcador2 col-2  ">
-        <p class="bordar">
-          C <br>
-          C++<br>
-          HTML<br>
-          CSS<br>
-          Bootstrap<br>
-          SQL
-        </p>
-      </div>
-      <div class="marcador2 col-2">
-        <p class="bordar">
-          JS<br>
-          PHP<br>
-          EMACS Script<br>
-          Java<br>
-          Python<br>
-          Linux
-        </p>   
-      </div>
-      <div class="marcador2 col-2">
-        <p class="bordar">Canvas<br>
-          Excel<br>
-          Word<br>
-          PowerPoint<br>
-          Publisher<br>
-          Jupyter Notebook<br>
-        Trello</p>   
-      </div>
-      <div class="marcador2 col-2">
-        <p class="bordar">Clickup<br>
-          ImageJ<br>
-          WinMerge<br>
-        PowerToys</p>   
+<div class="d-flex flex-column flex-md-row py-3">
+
+  <!-- Metade esquerda: Card da Graduação -->
+  <div class="d-flex justify-content-center align-items-center flex-fill" >
+    <div class="card text-black" style="width: 250px; display:flex; flex-direction:column; height:auto;">
+      <img class="card-img-top" src="img/unesp.JPG" style="width:100%; height:auto;" alt="Graduação">
+      <div class="card-body d-flex flex-column">
+        <h4 class="card-title">Graduação</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Bacharelado em Ciências da Computação</h6>
+        <p class="card-text text-center">Na Unesp (Universidade Estadual Paulista "Júlio de Mesquita Filho") no campus de Rio Claro, de 2019 à 2023 (Concluído)</p>
+        <a class="btn btn-outline-primary mt-auto" href="https://igce.rc.unesp.br/">Site da Instituição</a>
       </div>
     </div>
+  </div>
+
+  <!-- Metade direita: Carrossel dos Cursos -->
+  <div class="d-flex justify-content-center align-items-center flex-fill" >
+    <div id="cursosCarousel" class="carousel slide" style="width: 250px;" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Coursera -->
+        <div class="carousel-item active">
+          <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
+            <img class="card-img-top" src="img/coursera.png" style="width:100%; height:auto;" alt="Coursera">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title">Curso</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Introdução à Ciências da Computação</h6>
+              <p class="card-text">Feito pela Coursera, onde aprendi a linguagem Python. Finalizei em 2019.</p>
+              <a class="btn btn-outline-primary mt-auto" href="https://pt.coursera.org/learn/ciencia-computacao-python-conceitos">Site da Instituição</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Udemy -->
+        <div class="carousel-item">
+          <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
+            <img class="card-img-top" src="img/udemy.png" style="width:100%; height:auto;" alt="Udemy">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title">Curso</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Desenvolvimento Web Completo</h6>
+              <p class="card-text">Feito no site Udemy, aprendi HTML, CSS, Bootstrap, JS, EMACS e PHP.</p>
+              <a class="btn btn-outline-primary mt-auto" href="https://www.udemy.com/course/web-completo/">Site da Instituição</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alura -->
+        <div class="carousel-item">
+          <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
+            <img class="card-img-top" src="img/alura.png" style="width:100%; height:auto;" alt="Alura">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title">Curso</h4>
+              <h6 class="card-subtitle mb-2 text-muted">C++: Conhecendo a linguagem e a STL</h6>
+              <p class="card-text">Feito no site Alura, onde fortalecei conhecimentos em C++.</p>
+              <a class="btn btn-outline-primary mt-auto" href="https://www.alura.com.br/curso-online-cpp-introducao-a-linguagem">Site da Instituição</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <a class="carousel-control-prev" href="#cursosCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#cursosCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<h3 class="border-bottom mb-4">Tecnologias e Linguagens</h3>
+<div class="row justify-content-around g-3 ">
+  <div class="col-12 col-md-6 col-lg-3 mb-1">
+    <div class="card-custom h-100">
+      C <br>
+      C++ <br>
+      HTML <br>
+      CSS <br>
+      Bootstrap <br>
+      SQL
+    </div>
+  </div>
+ 
+  <div class="col-12 col-md-6 col-lg-3 mb-1">
+    <div class="card-custom h-100">
+      JS <br>
+      PHP <br>
+      EMACS Script <br>
+      Java <br>
+      Python <br>
+      Linux
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-3 mb-1">
+    <div class="card-custom h-100">
+      Canvas <br>
+      Excel <br>
+      Word <br>
+      PowerPoint <br>
+      Publisher <br>
+      Jupyter Notebook <br>
+      Trello
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-3 mb-1">
+    <div class="card-custom h-100">
+      Clickup <br>
+      ImageJ <br>
+      WinMerge <br>
+      PowerToys
+    </div>
+  </div>
+</div>
+
+
+
+
 
     <h3 class="border-bottom">Idiomas</h3>
     <div class="caixa d-flex flex-wrap gap-3">
       <div class="idioma d-flex align-items-center gap-2">
-        <img src="img/br.jpg" width="40" height="20" alt="Bandeira Brasil">
-        <span>: Nativo</span>
+        <img src="img/br.jpg" width="40" height="20" alt="Bandeira Brasil" class="img-flag">
+        <span>Nativo   </span>
       </div>
       <div class="idioma d-flex align-items-center gap-2">
-        <img src="img/eua.png" width="40" height="20" alt="Bandeira EUA">
-        <span>: Intermediário</span>
+        <img src="img/eua.png" width="40" height="20" alt="Bandeira EUA" class="img-flag">
+        <span>Intermediário</span>
       </div>
     </div>
 
@@ -253,6 +304,12 @@
   const idade = new Date().getFullYear();
   document.getElementById('idade').textContent = idade - 2000;
 </script>  
+
+<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -130,3 +130,72 @@ article{
   visibility: visible;
   opacity: 1;
 }
+
+.caixa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* espaçamento entre idiomas */
+}
+
+.idioma {
+  border: 1px solid #ccc;   /* borda leve */
+  border-radius: 8px;       /* cantos arredondados */
+  padding: 8px 12px;        /* espaço interno */
+  background-color: #f9f9f9; /* fundo suave */
+  min-width: 150px;          /* largura mínima */
+}
+
+.img-flag {
+  border-right: 2px solid #ccc; /* borda entre a imagem e o texto */
+  padding-right: 8px;          /* espaço entre a borda e o texto */
+}
+
+.card-custom {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: #fff; /* deixa o texto branco para destacar */
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  font-weight: 500;
+  height: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.card-custom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-custom li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.card-custom li:last-child {
+  border-bottom: none;
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  color: #007bff !important;
+}
+
+.card-custom p {
+  margin: 0;
+  line-height: 1.8;                /* dar respiro entre linhas */
+}
+
+#cursosCarousel .carousel-control-prev-icon,
+#cursosCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.9); /* cor preta semitransparente */
+    border-radius: 50%; /* deixa circular */
+    width: 40px;
+    height: 40px;
+    background-size: 20%, 20%;
+}
