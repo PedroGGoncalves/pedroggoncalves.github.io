@@ -20,18 +20,56 @@ footer{
  width: 100%;
  height: 2.5rem;
 }
-article{
-	background: #e6e6fa;
-	padding: 10px;
-	height: 740px;
-	text-align: center;
+
+.footerIndex {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3); /* transparente para ver o parallax */
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
+
+article {
+    background: linear-gradient(135deg, rgba(230,230,250,0.6), rgba(255,255,255,0.3));
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Uma única tela cheia */
+    .content {
+      height: 100vh; /* ocupa a tela inteira */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* centraliza verticalmente */
+      align-items: center;     /* centraliza horizontalmente */
+      text-align: center;
+      background: linear-gradient(to bottom, #4b0082, #8a2be2);
+      padding: 20px;
+    }
+
+
+.hero-header {
+  color: #ffffff; /* branco */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4); /* sombra sutil para destaque */
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+}
+
 .marcador {
-    background: #d3d3d3;
-    height: 550px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(0,0,0,0.15));
+  backdrop-filter: blur(8px); /* deixa o fundo “frosted glass” */
+  align-items: center;
 }
+
 .marcador-container {
-    background: #5bf946;
+  background: #5bf946;
 }
 
 .marcadorSeta {
@@ -43,13 +81,13 @@ article{
 }
 
 #preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:black; 
-    z-index:999; 
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:black; 
+  z-index:999; 
 
 }
 #img {
@@ -59,15 +97,16 @@ article{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .marcador2 {
-    background: #1E90FF;
-    border: 1px solid #008B8B;
-    height: 180px;
-    text-align: center;
-    tex
+  background: #1E90FF;
+  border: 1px solid #008B8B;
+  height: 180px;
+  text-align: center;
+  tex
 }
 .bordar{
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .tooltip {
@@ -193,9 +232,9 @@ article{
 
 #cursosCarousel .carousel-control-prev-icon,
 #cursosCarousel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.9); /* cor preta semitransparente */
-    border-radius: 50%; /* deixa circular */
-    width: 40px;
-    height: 40px;
-    background-size: 20%, 20%;
+  background-color: rgba(0, 0, 0, 0.9); /* cor preta semitransparente */
+  border-radius: 50%; /* deixa circular */
+  width: 40px;
+  height: 40px;
+  background-size: 20%, 20%;
 }
