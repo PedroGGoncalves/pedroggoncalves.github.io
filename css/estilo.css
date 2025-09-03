@@ -238,3 +238,10 @@ article {
   height: 40px;
   background-size: 20%, 20%;
 }
+
+/*Evitar exportar essa classe ao gerar o PDF*/
+@media print {
+  .no-print {
+    display: none;
+  }
+}
