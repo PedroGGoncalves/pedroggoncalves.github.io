@@ -27,8 +27,9 @@
   <!--Essas imagens não pertencem a mim, seus direitos são de seus donos. Portanto, eu apenas as utilizei para fins educacionais.-->
 
   <div class>
+    <!-- Resumo e objetivo -->
     <h3 class="border-bottom">Pedro G. Gonçalves</h3>
-    <div class="jumbotron">
+    <div class="jumbotron"> 
       <div class="container">
         <h1 class="display-4">Um breve resumo</h1>
         <p class="lead">Olá eu sou o Pedro! Um programador júnior, que finalizou a graduação em 2023 na Unesp. Já atuei como Estagiário em P&D na Alliage, onde fui efetivado como Desenvolvedor de Software Júnior. Sou de São Carlos (SP) e desde mais novo tenho interesse em tecnologia.</p>
@@ -36,10 +37,11 @@
         <p>Atualmente, meu objetivo é crescer/evoluir na área, aplicando todos meus conhecimentos adquiridos e, por fim, ser realizado nela. Caso, queira ver alguns projetos que desenvolvi, clique no botão abaixo.</p>
         <a class="btn btn-primary btn-lg" href="portfolio.html">Meus Projetos</a>
       </div>
-    </div>
+    </div> <!-- Fim Resumo e objetivo -->
 
+    <!-- Quem sou eu -->
     <h3 class="border-bottom">Sobre mim</h3>
-    <div class="overflow: hidden;">
+    <div class="overflow: hidden;"> 
       <img src="img/p_des.png" 
       style="float: left; margin-right: 15px; max-width: 300px; height: auto;">
 
@@ -52,142 +54,139 @@
         <p>Por fim, caso tenha alguma dúvida sobre mim, entre em contato comigo pelos emails ou Linkedin que deixarei no fim da página.</p>
         <p>Obrigado pela atenção e explore tudo nesse meu portifólio!</p>
       </div>
-    </div>
-    <br><br>
+    </div> <!-- Fim Quem sou eu -->
     
+    <!-- Trajetória academica -->
     <h3 class="border-bottom mb-4">Formação</h3>
+    <div class="d-flex flex-column flex-md-row py-3">
 
-<div class="d-flex flex-column flex-md-row py-3">
+      <!-- Metade esquerda: Card da Graduação -->
+      <div class="d-flex justify-content-center align-items-center flex-fill" >
+        <div class="card text-black" style="width: 250px; display:flex; flex-direction:column; height:auto;">
+          <img class="card-img-top" src="img/unesp.jpg" style="width:100%; height:auto;" alt="Graduação">
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title">Graduação</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Bacharelado em Ciências da Computação</h6>
+            <p class="card-text text-center">Na Unesp (Universidade Estadual Paulista "Júlio de Mesquita Filho") no campus de Rio Claro, de 2019 à 2023 (Concluído)</p>
+            <a class="btn btn-outline-primary mt-auto" href="https://igce.rc.unesp.br/">Site da Instituição</a>
+          </div>
+        </div>
+      </div> <!-- Fim Metade esquerda: Card da Graduação -->
 
-  <!-- Metade esquerda: Card da Graduação -->
-  <div class="d-flex justify-content-center align-items-center flex-fill" >
-    <div class="card text-black" style="width: 250px; display:flex; flex-direction:column; height:auto;">
-      <img class="card-img-top" src="img/unesp.jpg" style="width:100%; height:auto;" alt="Graduação">
-      <div class="card-body d-flex flex-column">
-        <h4 class="card-title">Graduação</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Bacharelado em Ciências da Computação</h6>
-        <p class="card-text text-center">Na Unesp (Universidade Estadual Paulista "Júlio de Mesquita Filho") no campus de Rio Claro, de 2019 à 2023 (Concluído)</p>
-        <a class="btn btn-outline-primary mt-auto" href="https://igce.rc.unesp.br/">Site da Instituição</a>
+      <!-- Metade direita: Carrossel dos Extras -->
+      <div class="d-flex justify-content-center align-items-center flex-fill" >
+        <div id="cursosCarousel" class="carousel slide" style="width: 250px;" data-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Coursera -->
+            <div class="carousel-item active">
+              <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
+                <img class="card-img-top" src="img/coursera.png" style="width:100%; height:auto;" alt="Coursera">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Curso</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Introdução à Ciências da Computação</h6>
+                  <p class="card-text">Feito pela Coursera, onde aprendi a linguagem Python. Finalizei em 2019.</p>
+                  <a class="btn btn-outline-primary mt-auto" href="https://pt.coursera.org/learn/ciencia-computacao-python-conceitos">Site da Instituição</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Udemy -->
+            <div class="carousel-item">
+              <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
+                <img class="card-img-top" src="img/udemy.png" style="width:100%; height:auto;" alt="Udemy">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Curso</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">Desenvolvimento Web Completo</h6>
+                  <p class="card-text">Feito no site Udemy, aprendi HTML, CSS, Bootstrap, JS, EMACS e PHP.</p>
+                  <a class="btn btn-outline-primary mt-auto" href="https://www.udemy.com/course/web-completo/">Site da Instituição</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Alura -->
+            <div class="carousel-item">
+              <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
+                <img class="card-img-top" src="img/alura.png" style="width:100%; height:auto;" alt="Alura">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Curso</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">C++: Conhecendo a linguagem e a STL</h6>
+                  <p class="card-text">Feito no site Alura, onde fortalecei conhecimentos em C++.</p>
+                  <a class="btn btn-outline-primary mt-auto" href="https://www.alura.com.br/curso-online-cpp-introducao-a-linguagem">Site da Instituição</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controles do carousel -->
+          <a class="carousel-control-prev" href="#cursosCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#cursosCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div> <!-- Fim Metade direita: Carrossel dos Extras -->
+    </div> <!-- Fim Trajetória academica -->
+
+    <!-- Skills -->
+    <h3 class="border-bottom mb-4">Tecnologias e Linguagens</h3>
+    <div class="row justify-content-around g-3 ">
+
+      <!-- Skills Coluna 1 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-1">
+        <div class="card-custom h-100">
+          C <br>
+          C++ <br>
+          HTML <br>
+          CSS <br>
+          Bootstrap <br>
+          SQL
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Metade direita: Carrossel dos Cursos -->
-  <div class="d-flex justify-content-center align-items-center flex-fill" >
-    <div id="cursosCarousel" class="carousel slide" style="width: 250px;" data-ride="carousel">
-      <div class="carousel-inner">
-
-        <!-- Coursera -->
-        <div class="carousel-item active">
-          <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
-            <img class="card-img-top" src="img/coursera.png" style="width:100%; height:auto;" alt="Coursera">
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title">Curso</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Introdução à Ciências da Computação</h6>
-              <p class="card-text">Feito pela Coursera, onde aprendi a linguagem Python. Finalizei em 2019.</p>
-              <a class="btn btn-outline-primary mt-auto" href="https://pt.coursera.org/learn/ciencia-computacao-python-conceitos">Site da Instituição</a>
-            </div>
-          </div>
+      <!-- Skills Coluna 2 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-1">
+        <div class="card-custom h-100">
+          JS <br>
+          PHP <br>
+          EMACS Script <br>
+          Java <br>
+          Python <br>
+          Linux <br>
+          OpenCV
         </div>
-
-        <!-- Udemy -->
-        <div class="carousel-item">
-          <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
-            <img class="card-img-top" src="img/udemy.png" style="width:100%; height:auto;" alt="Udemy">
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title">Curso</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Desenvolvimento Web Completo</h6>
-              <p class="card-text">Feito no site Udemy, aprendi HTML, CSS, Bootstrap, JS, EMACS e PHP.</p>
-              <a class="btn btn-outline-primary mt-auto" href="https://www.udemy.com/course/web-completo/">Site da Instituição</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Alura -->
-        <div class="carousel-item">
-          <div class="card text-primary" style="width: 100%; display:flex; flex-direction:column; height:auto;">
-            <img class="card-img-top" src="img/alura.png" style="width:100%; height:auto;" alt="Alura">
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title">Curso</h4>
-              <h6 class="card-subtitle mb-2 text-muted">C++: Conhecendo a linguagem e a STL</h6>
-              <p class="card-text">Feito no site Alura, onde fortalecei conhecimentos em C++.</p>
-              <a class="btn btn-outline-primary mt-auto" href="https://www.alura.com.br/curso-online-cpp-introducao-a-linguagem">Site da Instituição</a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Controles -->
-      <a class="carousel-control-prev" href="#cursosCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#cursosCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Próximo</span>
-      </a>
-    </div>
-  </div>
+      <!-- Skills Coluna 3 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-1">
+        <div class="card-custom h-100">
+          Canvas <br>
+          Excel <br>
+          Word <br>
+          PowerPoint <br>
+          Publisher <br>
+          Jupyter Notebook <br>
+          Trello
+        </div>
+      </div>
 
-</div>
+      <!-- Skills Coluna 4 -->
+      <div class="col-12 col-md-6 col-lg-3 mb-1">
+        <div class="card-custom h-100">
+          Clickup <br>
+          ImageJ <br>
+          WinMerge <br>
+          PowerToys
+        </div>
+      </div>
 
+    </div> <!-- Fim Skills -->
 
-
-
-
-
-<h3 class="border-bottom mb-4">Tecnologias e Linguagens</h3>
-<div class="row justify-content-around g-3 ">
-  <div class="col-12 col-md-6 col-lg-3 mb-1">
-    <div class="card-custom h-100">
-      C <br>
-      C++ <br>
-      HTML <br>
-      CSS <br>
-      Bootstrap <br>
-      SQL
-    </div>
-  </div>
- 
-  <div class="col-12 col-md-6 col-lg-3 mb-1">
-    <div class="card-custom h-100">
-      JS <br>
-      PHP <br>
-      EMACS Script <br>
-      Java <br>
-      Python <br>
-      Linux <br>
-      OpenCV
-    </div>
-  </div>
-
-  <div class="col-12 col-md-6 col-lg-3 mb-1">
-    <div class="card-custom h-100">
-      Canvas <br>
-      Excel <br>
-      Word <br>
-      PowerPoint <br>
-      Publisher <br>
-      Jupyter Notebook <br>
-      Trello
-    </div>
-  </div>
-
-  <div class="col-12 col-md-6 col-lg-3 mb-1">
-    <div class="card-custom h-100">
-      Clickup <br>
-      ImageJ <br>
-      WinMerge <br>
-      PowerToys
-    </div>
-  </div>
-</div>
-
-
-
-
-
+    <!-- Idiomas -->
     <h3 class="border-bottom">Idiomas</h3>
     <div class="caixa d-flex flex-wrap gap-3">
       <div class="idioma d-flex align-items-center gap-2">
@@ -198,11 +197,14 @@
         <img src="img/eua.png" width="40" height="20" alt="Bandeira EUA" class="img-flag">
         <span>Intermediário</span>
       </div>
-    </div>
+    </div> <!-- Fim Idiomas -->
 
+    <!-- Trajetória profissional -->
     <h3 class="border-bottom">Experiências Profissionais</h3>
     <div class="table-responsive mt-4">
       <table class="table table-dark">
+
+        <!-- Tópicos da trajetória -->
         <thead>
           <tr>
             <th>Empresa</th>
@@ -215,6 +217,7 @@
         </thead>
 
         <tbody>
+          <!-- 1º emprego -->
           <tr>
             <td>Alliage</td>
             <td>Ribeirão Preto</td>
@@ -223,6 +226,7 @@
             <td>Dezembro de 2023</td>
             <td>1</td>
           </tr>
+          <!-- 2º emprego -->
           <tr>
             <td>Alliage</td>
             <td>Ribeirão Preto</td>
@@ -232,52 +236,63 @@
             <td>2</td>
           </tr>
         </tbody>
+
       </table>
-    </div>
     
+    <!-- Descrições de atividades dos empregos -->
     <div class="mt-2">
       <small>
+        <!-- 1º emprego -->
         <sup>1</sup> Participação de projetos, com a finalidade de melhorar a qualidade da imagemns panorâmicas, adição de features no sistema do novo equipamento. Foi necessário realizar pesquisar, desenvolver soluções, analisar os resultados, otimizar os algoritmos, validar antes de ir para o QA e colaboração com o time multidisciplinar. As atividades podem ser resumidas em dois projetos:  Redução do Apinhamento Dental, o qual utilizei MATLAB e Python; Desenvolvimento do software do Scanner próprio, onde usei Python, OpenCV, Open3D, Cloud Compare, C++ e ImageJ<br><br>
+        
+        <!-- 2º emprego -->
         <sup>2</sup> Participação de projetos, com a finalidade de melhorar a qualidade da imagens tomográficas, adição ou correção de features no software já existente. Foi necessário realizar pesquisar, desenvolver soluções, analisar os resultados, otimizar os algoritmos, validar antes de ir para o QA e colaboração com o time multidisciplinar. As atividades podem ser resumidas nos seguintes projetos: MERGE de softwares de dois equipamentos de linhas diferentes, Integração de sensor novo via software, Melhoria do método de unificação de imagens com stiching, Adaptação do software para integração com softwares externos, Redução de consumo de memória. Entre outras tarefas que individualizadas, que eram correções ou adições à esse software. Em todos esses projetos, foram usados Java, CSS, C#, JavaFX, MATLAB, C++, ImageJ, WinMerge, PowerToys e GitHub.
+      
       </small>
-    </div>
+    </div> 
+  </div> <!-- Fim Trajetória profissional -->
 
-    <h3 class="border-bottom">Experiências Voluntárias</h3>
-    <div class="alert alert-dark">
-      <h4> SECComp - Semana da Ciência da Computação</h4>
-      <p>&#9654;Em 2021, fui membro da Equipe de Contato na Comissão de Organização da XXIX SECComp da Unesp Rio Claro.</p>
-      <hr>
-      <p>&#9654; Em 2022, continuei na Comissão de Organização da XXX SECComp da Unesp Rio Claro, ficando na Equipe de Relações.</p>
-      <hr>
-      <p>Em ambas equipes, fui responsável por contatar patrocinadores e palestrantes, além de auxiliar na organização antes e no dia do evento. </p>
-    </div>
+  <!-- Voluntarismo -->
+  <h3 class="border-bottom">Experiências Voluntárias</h3>
+  <div class="alert alert-dark">
+    <h4> SECComp - Semana da Ciência da Computação</h4>
+    <p>&#9654;Em 2021, fui membro da Equipe de Contato na Comissão de Organização da XXIX SECComp da Unesp Rio Claro.</p>
+    <hr>
+    <p>&#9654; Em 2022, continuei na Comissão de Organização da XXX SECComp da Unesp Rio Claro, ficando na Equipe de Relações.</p>
+    <hr>
+    <p>Em ambas equipes, fui responsável por contatar patrocinadores e palestrantes, além de auxiliar na organização antes e no dia do evento. </p>
+  </div> <!-- Fim Voluntarismo -->
 
-    <h3 class="border-bottom">Contato e Redes</h3>
+  <!-- Contatos -->
+  <h3 class="border-bottom">Contato e Redes</h3>
+  <div>
     <ul class="list-group">
       <li class="list-group-item">Email: pedro.g.goncalves82@gmail.com</li>
       <li class="list-group-item list-group-item-info">Email Institucional: pedro.g.goncalves@unesp.br</li>
       <li class="list-group-item">LinkedIn:<a href="https://www.linkedin.com/in/pedro-gonçalves-9787181a0/"> linkedin.com/in/pedro-gonçalves-9787181a0</a> </li>
-      <li class="list-group-item list-group-item-info">GitHub:<a href="https://github.com/PedroGGoncalves"> github.com/PedroGGoncalves</li></a>
+      <li class="list-group-item list-group-item-info">GitHub:<a href="https://github.com/PedroGGoncalves"> github.com/PedroGGoncalves</a></li>
+    </ul> 
+  </div> <!-- Fim Contatos -->
+  
+  <!-- Agradecimentos -->
+  <h3 class="border-bottom">Obrigado por chegar até aqui!</h3>
+  <div>
+    <p>Caso tenha interesse, abaixo colocarei o link do meu canal no Youtube relaciona a músicas relaxantes e o do meu blog sobre cultura geek. São projetos pessoais, vertentes minhas "sem relação" com programação. </p>
+    <ul>
+      <li><b><a href="https://www.youtube.com/@ConatusRelax">Canal no Youtube</a> </b></li>
+      <li><b><a href="https://conatussblog.blogspot.com/">Blog</a> </b></li>
     </ul>
+    <p> Bem é isso...  </p>
+    <br>
+    <img src="img/naruto.jpg" 
+    style="margin-left: 5px; max-width: 100%; height: auto;">
+    <br><br><br>
+    <h3>Até mais!</h3>
+  </div> <!-- Fim Agradecimentos -->
 
-    <h3 class="border-bottom">Obrigado por chegar até aqui!</h3>
-    
   </div>
 
-  <p>Caso tenha interesse, abaixo colocarei o link do meu canal no Youtube relaciona a músicas relaxantes e o do meu blog sobre cultura geek. São projetos pessoais, vertentes minhas "sem relação" com programação. </p>
-
-  <ul>
-    <li><b><a href="https://www.youtube.com/@ConatusRelax">Canal no Youtube</a> </b></li>
-    <li><b><a href="https://conatussblog.blogspot.com/">Blog</a> </b></li>
-  </ul>
-
-  <p> Bem é isso...  </p>
-  <br>
-  <img src="img/naruto.jpg" 
-  style="margin-left: 5px; max-width: 100%; height: auto;">
-  <br><br><br>
-  <h3>Até mais!</h3>
-
+  <!-- Footer -->
   <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
     <a href="index.html" class="navbar-brand">Meu Portifólio</a>
     <span class="navbar-text mx-auto" style="color:white;">
@@ -312,10 +327,10 @@
 </script>  
 
 <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

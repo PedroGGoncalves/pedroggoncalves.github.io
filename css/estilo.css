@@ -1,3 +1,4 @@
+/*****************************Geral*****************************/
 body {
   overflow: hidden;
   padding: 0;
@@ -7,20 +8,48 @@ body {
   overflow-y: scroll;
 
 }
+
 header{
-	border: 1px solid #ccc;
-	background: #f2f2f2;
-	padding: 10px;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  padding: 10px;
 
 }
+
 footer{
-	background: #ffffe0;
-	position: absolute;
- bottom: 0;
- width: 100%;
- height: 2.5rem;
+  background: #ffffe0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
+article {
+  background: linear-gradient(135deg, rgba(230,230,250,0.6), rgba(255,255,255,0.3));
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+#preloader { /*Tela de carregamento*/
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:black; 
+  z-index:999; 
+}
+
+#img { /*Img Tela de carregamento*/
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*****************************Index*****************************/
 .footerIndex {
   width: 100%;
   text-align: center;
@@ -32,25 +61,16 @@ footer{
   border-top: 1px solid rgba(255,255,255,0.2);
 }
 
-article {
-    background: linear-gradient(135deg, rgba(230,230,250,0.6), rgba(255,255,255,0.3));
-    padding: 10px;
-    text-align: center;
-    border-radius: 12px;
+.content { /* Uma única tela cheia */
+  height: 100vh; /* ocupa a tela inteira */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+  text-align: center;
+  background: linear-gradient(to bottom, #4b0082, #8a2be2);
+  padding: 20px;
 }
-
-/* Uma única tela cheia */
-    .content {
-      height: 100vh; /* ocupa a tela inteira */
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* centraliza verticalmente */
-      align-items: center;     /* centraliza horizontalmente */
-      text-align: center;
-      background: linear-gradient(to bottom, #4b0082, #8a2be2);
-      padding: 20px;
-    }
-
 
 .hero-header {
   color: #ffffff; /* branco */
@@ -60,7 +80,7 @@ article {
   text-align: center;
 }
 
-.marcador {
+.marcador { /*Efeito na região dos botões*/
   padding: 20px;
   border-radius: 12px;
   background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(0,0,0,0.15));
@@ -68,55 +88,13 @@ article {
   align-items: center;
 }
 
-.marcador-container {
-  background: #5bf946;
-}
-
-.marcadorSeta {
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 12px solid yellow; /* cor da seta */
-}
-
-#preloader {
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color:black; 
-  z-index:999; 
-
-}
-#img {
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.marcador2 {
-  background: #1E90FF;
-  border: 1px solid #008B8B;
-  height: 180px;
-  text-align: center;
-  tex
-}
-.bordar{
-  margin-top: 10px;
-}
-
-.tooltip {
+.tooltip { /*Inicio Tooltip*/
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
+.tooltip .tooltiptext { /* Tooltip text */
   visibility: hidden;
   width: 220px;
   background-color: #555;
@@ -134,8 +112,7 @@ article {
   pointer-events: none;
 }
 
-/* Mostrar tooltip ao passar o mouse */
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext { /* Mostrar tooltip ao passar o mouse */
   visibility: visible;
   opacity: 1;
 }
@@ -168,9 +145,19 @@ article {
 .tooltip-link:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+} /*Fim Tooltip*/
+
+/*****************************Simples*****************************/
+
+/*Evitar exportar essa classe ao gerar o PDF*/
+@media print {
+  .no-print {
+    display: none;
+  }
 }
 
-.caixa {
+/*****************************Estiloso*****************************/
+.caixa { /*Usado no index também*/
   display: flex;
   flex-wrap: wrap;
   gap: 1rem; /* espaçamento entre idiomas */
@@ -189,7 +176,7 @@ article {
   padding-right: 8px;          /* espaço entre a borda e o texto */
 }
 
-.card-custom {
+.card-custom { /*ínicio card-custom*/
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   color: #fff; /* deixa o texto branco para destacar */
   border-radius: 10px;
@@ -202,7 +189,6 @@ article {
   word-break: break-word;
   overflow-wrap: break-word;
 }
-
 
 .card-custom ul {
   list-style: none;
@@ -228,7 +214,7 @@ article {
 .card-custom p {
   margin: 0;
   line-height: 1.8;                /* dar respiro entre linhas */
-}
+} /*fim card-custom*/
 
 #cursosCarousel .carousel-control-prev-icon,
 #cursosCarousel .carousel-control-next-icon {
@@ -239,9 +225,6 @@ article {
   background-size: 20%, 20%;
 }
 
-/*Evitar exportar essa classe ao gerar o PDF*/
-@media print {
-  .no-print {
-    display: none;
-  }
-}
+/******************************Portfólio******************************/
+
+/*Nada único*/
