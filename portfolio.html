@@ -16,7 +16,7 @@
   <title>Meu Portfólio</title>
   <link rel="icon" href="img/p_l.png">
 </head>
-<body style="margin-bottom: 200px;padding: 16px; background: gray;">
+<body style="margin-bottom: 200px;padding: 16px; background-color: #212529; /* mesma cor da navbar */color: #f8f9fa;">
  	<!--<div id="preloader">
     <img id="img" src="img/P.gif">
   </div>-->
@@ -29,6 +29,7 @@
     <script>
       const groups = [
         {
+          //Projetos Unesp
           title: "Projetos Universitários",
           cards: [
             {
@@ -98,7 +99,7 @@
               text: "Duas atividades feitas individualmente e dois projetos, um foi feito individualmente e outro em dupla. A primeira atividade, era um mini processador de comandos e a outra uma simulação, de como um barbeiro agiria na presença e ausência de clientes. Um projeto é um processador de comandos e o outro um simulador de um sistema de arquivos.",
               link: "https://github.com/PedroGGoncalves/Atividades_Sistemas_Operacionais_II",
               btnText: "Veja mais",
-              colorClass: "bg-light text-black",
+              colorClass: "bg-light text-dark",
               colorButton: "btn-outline-dark"
             },
 
@@ -119,7 +120,7 @@
               text: "Um projeto feito com o desejo de simular um sistema de aquário, além de usar o conceito de Orientação de objetos. Foi feito em grupo.",
               link: "https://github.com/PedroGGoncalves/Projeto_Sistemas_Orientados_Objetos",
               btnText: "Veja mais",
-              colorClass: "bg-white text-black",
+              colorClass: "bg-white text-dark",
               colorButton: "btn-outline-dark"
             },
 
@@ -146,10 +147,13 @@
 
           ]
         },
+        // Fim Projetos Unesp
+
+        //Projetos Unesp que não posso disponibilizar o código
         {
           isDivider: true,
           html: `<div class="text-bg-dark p-2">
-                     <h3>Projetos não disponibilizados</h3>
+                     <h3 style="text-decoration: underline;">Projetos não disponibilizados</h3>
           </div>`
         },
         {
@@ -194,6 +198,9 @@
             }
           ]
         },
+        //Fim Projetos Unesp que não posso disponibilizar o código
+
+        //Projetos pessoais
         {
           title: "Projetos Extracurriculares",
           cards: [
@@ -244,7 +251,7 @@
               text: "Dois trabalhos desenvolvidos no processo de busca de estágio. Um deles era alguns programas, enquanto o outro era a tentativa de reproduzir um site.",
               link: "https://github.com/PedroGGoncalves/Exercicios_Processos_Seletivos",
               btnText: "Acessar código",
-              colorClass: "bg-success text-white"
+              colorClass: "bg-info text-white"
             },
 
             {
@@ -254,7 +261,7 @@
               text: "Projeto feito para treinar os conhecimentos adquiridos na disciplina Sistemas Orientados à Objetos.",
               link: "https://github.com/PedroGGoncalves/Projeto_SistemaCanil",
               btnText: "Acessar código",
-              colorClass: "bg-warning text-white"
+              colorClass: "bg-success text-white"
             },
 
             {
@@ -264,7 +271,7 @@
               text: "Um jogo da velha feito de forma simples, para treinar os conhecimentos do curso da Udemy.",
               link: "https://github.com/PedroGGoncalves/Jogo_da_Velha_JS",
               btnText: "Acessar código",
-              colorClass: "bg-danger text-white"
+              colorClass: "bg-warning text-white"
             },
 
             {
@@ -274,8 +281,7 @@
               text: "Aqui foi feito, um código bem simples com o objetivo de converter e traduzir o Código Morse.",
               link: "https://github.com/PedroGGoncalves/Tradutor_Codigo_Morse",
               btnText: "Acessar código",
-              colorClass: "bg-light text-black",
-              colorButton: "btn-outline-dark"
+              colorClass: "bg-danger text-white"
             },
 
             {
@@ -285,7 +291,8 @@
               text: "Um jogo da forca bem restrito e simples, feito com o objetivo de treinar meus conhecimentos na linguagem Python.",
               link: "https://github.com/PedroGGoncalves/Jogo_da_Forca_Python",
               btnText: "Acessar código",
-              colorClass: "bg-dark text-white"
+              colorClass: "bg-light text-dark",
+              colorButton: "btn-outline-dark"
             },
 
             {
@@ -305,7 +312,7 @@
                   color: "btn-outline-light"
                 }
               ],
-              colorClass: "bg-primary text-white"
+              colorClass: "bg-dark text-white"
             },
 
             {
@@ -315,7 +322,8 @@
               text: "Aplicação criada para praticar conceitos de Python e oferecer uma solução prática para recortar múltiplas imagens de forma automatizada, mantendo a mesma região de corte",
               link: "https://github.com/PedroGGoncalves/Projeto-Recortar-Imagens-em-Lote",
               btnText: "Acessar código",
-              colorClass: "bg-secondary text-white"
+              colorClass: "bg-white text-dark",
+              colorButton: "btn-outline-dark"
             },
 
             {
@@ -325,7 +333,7 @@
               text: "Projeto criado como desafio do Bootcamp, explorando a geração de vídeo e áudio por meio de ferramentas de inteligência artificial.",
               link: "https://github.com/PedroGGoncalves/lab-natty-or-not",
               btnText: "Acessar projeto",
-              colorClass: "bg-success text-white"
+              colorClass: "bg-primary text-white"
             }, 
 
             {
@@ -335,7 +343,7 @@
               text: "Projeto do Bootcamp: produção de textos e imagens para um ebook com IA.",
               link: "https://github.com/PedroGGoncalves/prompts-recipe-to-create-a-ebook",
               btnText: "Acessar projeto",
-              colorClass: "bg-warning text-white"
+              colorClass: "bg-secondary text-white"
             },
 
             {
@@ -345,7 +353,7 @@
               text: "Projeto criado como desafio do Bootcamp, envolvendo a geração de textos, áudios e imagens para compor um episódio de podcast utilizando ferramentas de inteligência artificial.",
               link: "https://github.com/PedroGGoncalves/prompts-for-podcast-generate-by-ia",
               btnText: "Acessar projeto",
-              colorClass: "bg-danger text-white"
+              colorClass: "bg-info text-white"
             },
 
             {
@@ -355,8 +363,7 @@
               text: "Projeto criado como desafio do Bootcamp, consistindo em uma planilha dinâmica no Excel para facilitar a organização financeira por meio de automação e inteligência artificial.",
               link: "https://github.com/PedroGGoncalves/intelligent-sheets",
               btnText: "Acessar projeto",
-              colorClass: "bg-light text-black",
-              colorButton: "btn-outline-dark"
+              colorClass: "bg-success text-white"
             },
 
             {
@@ -366,11 +373,14 @@
               text: "Desafio final do Bootcamp com o tema <em>'Criando Impacto Social com IA'</em>. O projeto consistiu na criação de um ebook sobre aplicativos de controle financeiro, aplicando os conhecimentos adquiridos ao longo de todas as aulas.",
               link: "https://github.com/PedroGGoncalves/Desafio-Final-Caixa",
               btnText: "Acessar projeto",
-              colorClass: "bg-info text-white"
+              colorClass: "bg-warning text-white"
             },
 
           ]
         },
+        //Fim Projetos pessoais 
+
+        //Projetos Alliage
         {
           title: "Projetos Alliage <h4>(Não disponibilizados)</h4>",
           cards: [
@@ -446,8 +456,11 @@
 
           ]
         }
+        //Fim Projetos Alliage
       ];
 
+
+      //Função JS para otimizar a adição de cards
       const container = document.getElementById("projects-container");
 
       groups.forEach(group => {
@@ -460,7 +473,7 @@
     // Renderiza o grupo normalmente
           const groupTitle = document.createElement("div");
           groupTitle.className = "text-center my-4";
-          groupTitle.innerHTML = `<h2>${group.title}</h2>`;
+          groupTitle.innerHTML = `<h2 style="text-decoration: underline;">${group.title}</h2>`;
           container.appendChild(groupTitle);
 
           const row = document.createElement("div");
@@ -469,9 +482,9 @@
           group.cards.forEach(card => {
             const col = document.createElement("div");
             col.className = "col-12";
-
+            //Diferenciação de cards com um botão, dois botões e sem botão
             const div = document.createElement("div");
-            div.className = `card ${card.colorClass} mb-4`;
+            div.className = `card ${card.colorClass || "bg-transparent text-light"} mb-4`;
             div.innerHTML = `<div class="card-header">${card.header}</div>
                             <div class="card-body">
                               <h4 class="card-title">${card.title}</h4>
@@ -491,18 +504,18 @@
                               }
                             </div>
                               `;
-          col.appendChild(div);
-          row.appendChild(col);
-          });
-        container.appendChild(row);
+                              col.appendChild(div);
+                              row.appendChild(col);
+                            });
+          container.appendChild(row);
         }
       });
     </script>
     
   </section>
 
-  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-    <p>&copy; 2023 - PGG</p>
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark justify-content-center">
+    <p class="mb-0" style="color:white;">&copy; 2025 - pgg</p>
   </nav>
   
   <!--Funcao da tela de loading-->
