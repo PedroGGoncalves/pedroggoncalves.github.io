@@ -226,5 +226,285 @@ article {
 }
 
 /******************************Portfólio******************************/
+/* Todos os cards com gradiente - versão padronizada e corrigida */
+.card-gradient-purple {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
 
+/* Remove bordas apenas dos elementos internos do CARD, não dos botões */
+.card-gradient-purple .card-header,
+.card-gradient-purple .card-body,
+.card-gradient-purple .card-title,
+.card-gradient-purple .card-subtitle,
+.card-gradient-purple .card-text {
+  border: none !important;
+}
+
+/* Mantém as bordas dos botões */
+.card-gradient-purple .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important; /* Mantém a borda do botão */
+}
+
+.card-gradient-blue {
+  background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-blue .card-header,
+.card-gradient-blue .card-body,
+.card-gradient-blue .card-title,
+.card-gradient-blue .card-subtitle,
+.card-gradient-blue .card-text {
+  border: none !important;
+}
+
+.card-gradient-blue .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-teal {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-teal .card-header,
+.card-gradient-teal .card-body,
+.card-gradient-teal .card-title,
+.card-gradient-teal .card-subtitle,
+.card-gradient-teal .card-text {
+  border: none !important;
+}
+
+.card-gradient-teal .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-green {
+  background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-green .card-header,
+.card-gradient-green .card-body,
+.card-gradient-green .card-title,
+.card-gradient-green .card-subtitle,
+.card-gradient-green .card-text {
+  border: none !important;
+}
+
+.card-gradient-green .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-orange {
+  background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-orange .card-header,
+.card-gradient-orange .card-body,
+.card-gradient-orange .card-title,
+.card-gradient-orange .card-subtitle,
+.card-gradient-orange .card-text {
+  border: none !important;
+}
+
+.card-gradient-orange .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-pink {
+  background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-pink .card-header,
+.card-gradient-pink .card-body,
+.card-gradient-pink .card-title,
+.card-gradient-pink .card-subtitle,
+.card-gradient-pink .card-text {
+  border: none !important;
+}
+
+.card-gradient-pink .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-gray {
+  background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-gray .card-header,
+.card-gradient-gray .card-body,
+.card-gradient-gray .card-title,
+.card-gradient-gray .card-subtitle,
+.card-gradient-gray .card-text {
+  border: none !important;
+}
+
+.card-gradient-gray .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-dark {
+  background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-dark .card-header,
+.card-gradient-dark .card-body,
+.card-gradient-dark .card-title,
+.card-gradient-dark .card-subtitle,
+.card-gradient-dark .card-text {
+  border: none !important;
+}
+
+.card-gradient-dark .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-light {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-gradient-light .card-header,
+.card-gradient-light .card-body,
+.card-gradient-light .card-title,
+.card-gradient-light .card-subtitle,
+.card-gradient-light .card-text {
+  border: none !important;
+}
+
+.card-gradient-light .btn {
+  border: 2px solid rgba(0,0,0,0.3) !important;
+}
+
+.card-gradient-rose {
+  background: linear-gradient(135deg, #c31432 0%, #240b36 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-rose .card-header,
+.card-gradient-rose .card-body,
+.card-gradient-rose .card-title,
+.card-gradient-rose .card-subtitle,
+.card-gradient-rose .card-text {
+  border: none !important;
+}
+
+.card-gradient-rose .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+.card-gradient-cyan {
+  background: linear-gradient(135deg, #085078 0%, #85d8ce 100%);
+  color: white;
+  border: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card-gradient-cyan .card-header,
+.card-gradient-cyan .card-body,
+.card-gradient-cyan .card-title,
+.card-gradient-cyan .card-subtitle,
+.card-gradient-cyan .card-text {
+  border: none !important;
+}
+
+.card-gradient-cyan .btn {
+  border: 2px solid rgba(255,255,255,0.4) !important;
+}
+
+/* Efeito hover unificado para todos */
+[class^="card-gradient-"]:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* Estilos específicos para o card light (texto escuro) */
+.card-gradient-light .card-header {
+  color: #333;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+.card-gradient-light .card-title {
+  color: #222;
+}
+
+.card-gradient-light .card-subtitle {
+  color: #555;
+}
+
+.card-gradient-light .card-text {
+  color: #444;
+}
+
+.card-gradient-light .btn-outline-dark {
+  border: 2px solid rgba(0,0,0,0.3) !important;
+  color: #333;
+}
+
+.card-gradient-light .btn-outline-dark:hover {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+/******************************Portfólio******************************/
 /*Nada único*/
